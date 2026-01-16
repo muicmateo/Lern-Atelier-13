@@ -16,9 +16,11 @@ Ich werde probieren, einen **Dungeon Crawler** zu erstellen.
 
 ### Arbeitspakete für 23.01
 
-1. - [ ] Pre-made Dungeon wall sprite finden und implementieren
-2. - [ ] Enemy Orc Implementieren
-3. - [ ] Sprite für Orc Implementieren
-4. - [ ] Player Attacks implementieren
+1. - [ ] Player Animation fix
+2. - [ ] Pre-made Dungeon wall sprite finden und implementieren
+3. - [ ] Enemy Orc Implementieren
+4. - [ ] Sprite für Orc Implementieren
+5. - [ ] Player Attacks implementieren
+   
   
      
