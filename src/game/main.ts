@@ -3,11 +3,17 @@ import { AUTO, Game } from 'phaser';
 
 const config: Phaser.Types.Core.GameConfig = {
     type: AUTO,
-    width: 800,
-    height: 600,
+    width: 1200,
+    height: 900,
     parent: 'game-container',
     backgroundColor: '#1a1a2e',
-    scene: [MainGame]
+    scene: [MainGame],
+    physics: {
+        default: 'arcade',
+        arcade: {
+            debug: false
+        }
+    }
 };
 
 const StartGame = (parent: string) => {
