@@ -1,6 +1,9 @@
 //  Toggle this to disable the room hiding / layer scale, so you can see the extent of the map easily!
 const debug = false;
 
+// Declare Dungeon class from the minified script at the bottom
+declare var Dungeon: any;
+
 // Tile index mapping to make the code more readable
 const TILES = {
     TOP_LEFT_WALL: 3,
@@ -41,14 +44,14 @@ const TILES = {
 
 class Example extends Phaser.Scene
 {
-    activeRoom;
-    dungeon;
-    map;
-    player;
-    cursors;
-    cam;
-    layer;
-    lastMoveTime = 0;
+    activeRoom: any;
+    dungeon: any;
+    map: Phaser.Tilemaps.Tilemap;
+    player: Phaser.GameObjects.Graphics;
+    cursors: Phaser.Types.Input.Keyboard.CursorKeys;
+    cam: Phaser.Cameras.Scene2D.Camera;
+    layer: Phaser.Tilemaps.TilemapLayer;
+    lastMoveTime: number = 0;
 
     preload ()
     {
